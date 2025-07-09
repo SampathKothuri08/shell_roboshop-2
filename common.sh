@@ -5,6 +5,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/roboshop-logs"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
@@ -21,7 +22,6 @@ echo "script started at $(date)" | tee -a $LOG_FILE
 
 check_root()
 {
-    USER_ID=$(id -u)
 
     if [ $USER_ID -ne 0 ]
     then
