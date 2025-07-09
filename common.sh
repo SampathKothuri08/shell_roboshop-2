@@ -129,8 +129,6 @@ golang_setup(){
 
     id dispatch &>> $LOG_FILE
 
-
-
     go mod init dispatch &>> $LOG_FILE
 
     Validate $? "Initiating a new go module named dispatch"
