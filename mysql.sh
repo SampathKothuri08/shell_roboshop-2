@@ -21,7 +21,7 @@ Validate $? "Starting mysql"
 echo "Please enter mysql root password to setup"
 read -s MYSQL_ROOT_PASSWORD
 
-mysql_secure_installation --set-root-pass $MYSQL_ROOT_PASSWORD &>> $LOG_FILE
+mysql_secure_installation --set-root-pass "$MYSQL_ROOT_PASSWORD" &>> $LOG_FILE
 
 Validate $? "Setting Mysql root password"
 
