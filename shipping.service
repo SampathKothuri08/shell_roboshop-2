@@ -2,7 +2,7 @@
 Description=Shipping Service
 
 [Service]
-User=shipping
+User=roboshop_shipping
 // highlight-start
 Environment=CART_ENDPOINT=cart.devopseng.shop:8080
 Environment=DB_HOST=mysql.devopseng.shop

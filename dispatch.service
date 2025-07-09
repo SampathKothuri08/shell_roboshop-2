@@ -1,7 +1,7 @@
 [Unit]
 Description = Dispatch Service
 [Service]
-User=dispatch
+User=roboshop_dispatch
 // highlight-start
 Environment=AMQP_HOST=rabbitmq.devopseng.shop
 // highlight-end
