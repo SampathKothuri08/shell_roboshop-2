@@ -14,7 +14,7 @@ SCRIPT_DIR=$PWD
 
 mkdir -p $LOGS_FOLDER 
 
-START_TIME=(date+ %s)
+START_TIME=(date +%s)
 echo "script started at $(date)" | tee -a $LOG_FILE
 
 #check if the user has the root access or not
@@ -159,7 +159,7 @@ system_setup(){
 }
 Print_time(){
 
-    END_TIME=$(date+ %s)
+    END_TIME=$(date +%s)
     TIME_TAKE=$(($END_TIME-$START_TIME))
     
     echo -e "Script execution completed successfully, ${Y}time taken : ${G}$TIME_TAKEN seconds $N" | tee -a $LOG_FILE
