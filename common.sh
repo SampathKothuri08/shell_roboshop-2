@@ -160,7 +160,7 @@ system_setup(){
 Print_time(){
 
     END_TIME=$(date +%s)
-    TIME_TAKE=$(($END_TIME-$START_TIME))
+    TIME_TAKEN=$(($END_TIME-$START_TIME))
     
     echo -e "Script execution completed successfully, ${Y}time taken : ${G}$TIME_TAKEN seconds $N" | tee -a $LOG_FILE
 }
