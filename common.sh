@@ -83,7 +83,7 @@ app_setup(){
 
     curl -o /tmp/$app_name.zip https://roboshop-artifacts.s3.amazonaws.com/$app_name-v3.zip  &>> $LOG_FILE
 
-    Validate $? "Downloading the catalogue code"
+    Validate $? "Downloading the $app_name code"
 
     cd /app
 
@@ -91,7 +91,7 @@ app_setup(){
 
     unzip /tmp/$app_name.zip  &>> $LOG_FILE
 
-    Validate $? "Unzipping the catalogue code in the app directory"
+    Validate $? "Unzipping the $app_name code in the app directory"
 }
 
 maven_setup(){
