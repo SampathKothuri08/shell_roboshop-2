@@ -8,6 +8,8 @@ check_root
 
 app_setup
 
+golang_setup
+
 system_setup
 
 Print_time
